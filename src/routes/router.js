@@ -22,6 +22,6 @@ router.get('/api/autocomplete/:query', (req, res) => {
 router.get('/ping', (req, res) => {
     res.send('pong')
 });
-router.use('/', express.static('client'))
+app.use('/', express.static('client'))
 
 module.exports = router;
